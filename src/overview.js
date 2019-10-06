@@ -27,12 +27,8 @@
   newsOverview.prototype.createArticleOverview = function(i) {
     var htmlString = '<a href=#' + i + '>';
     htmlString += '<div id= headlines_pic' + i + '><img src=' + exports.newsOverview.result.results[i].fields.thumbnail + '></div>'
-    htmlString += '<div id= headlines' + i + '>' + exports.newsOverview.result.results[i].webTitle+ '</div></br>'
+    htmlString += '<div id= headlines' + i + '>' + exports.newsOverview.result.results[i].webTitle+ '</div></a></br>'
     return htmlString
-  }
-  newsOverview.prototype.test = function() {
-    exports.newsOverview.pull();
-    exports.newsOverview.displayOverview();
   }
   exports.newsOverview = newsOverview;
   var overviewLoaded = new Event('build');

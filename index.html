@@ -3,11 +3,15 @@
 <script src="test/testdata.js"></script>
 <script src="src/overview.js"></script>
 <script src="test/overview-test.js"></script>
+<script src="src/details.js"></script>
 
 <script>
 newsOverview = new newsOverview
+newsDetails = new newsDetails
+
 document.addEventListener('DOMContentLoaded', function() {
   newsOverview.pull();
+  newsDetails.pull();
 });
 </script>
 

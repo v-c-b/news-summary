@@ -7,7 +7,8 @@
     var xhr = new XMLHttpRequest();
     // xhr.open('GET', 'http://news-summary-api.herokuapp.com/guardian?apiRequestUrl=http://content.guardianapis.com/search?from-date=2019-10-06');
     // xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.open('GET', 'http://localhost:9292/properties')
+    // xhr.open('GET', 'http://localhost:9292/properties')
+    xhr.open('GET', 'http://localhost:8080')
     xhr.onload = function() {
       if (xhr.status === 200) {
         // exports.newsOverview.result = xhr.responseText // JSON/parse?

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<script src="test/jquery.js"></script>
+<script src="test/testdata.js"></script>
+<script src="src/overview.js"></script>
+<script src="test/overview-test.js"></script>
+
+<script>
+newsOverview = new newsOverview
+document.addEventListener('DOMContentLoaded', function() {
+  newsOverview.pull();
+});
+</script>
+
+<html>
+
+<head>
+  <title>Big news of the day</title>
+  <h1> Big news of the day</h1>
+</head>
+
+<body>
+
+  <div id="headlines"></div>
+
+</body>

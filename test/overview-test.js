@@ -1,4 +1,4 @@
-document.addEventListener('build', testOverview, false);
+document.addEventListener('buildOverview', testOverview, false);
 
 function testOverview() {
   if(document.getElementById('headlines9').innerHTML !== 'Erratic Trump struggles to control message as impeachment threat grows') {

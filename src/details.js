@@ -3,7 +3,7 @@
   function newsDetails() {
     this.result
   };
-  newsDetails.prototype.pull = function(index) {
+  newsDetails.prototype.pull = function() {
     var xhr = new XMLHttpRequest();
     // xhr.open('GET', 'http://news-summary-api.herokuapp.com/guardian?apiRequestUrl=http://content.guardianapis.com/search?from-date=2019-10-06');
     // xhr.setRequestHeader('Content-Type', 'application/json');
@@ -20,5 +20,5 @@
   };
   exports.newsDetails = newsDetails;
   var detailsLoaded = new Event('buildDetails');
-  document.addEventListener('buildDetails', function () { console.log('details loaded') }, false);
+  document.addEventListener('buildDetails', function () { console.log('Details loaded') }, false);
 })(this);

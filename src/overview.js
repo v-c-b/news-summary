@@ -23,6 +23,7 @@
       document.getElementById('headlines')
       .insertAdjacentHTML('afterend', exports.newsOverview.createArticleOverview(i));
     }
+  console.log('Overview loaded')
   }
   newsOverview.prototype.createArticleOverview = function(i) {
     var htmlString = '<a href=#' + i + '>';
